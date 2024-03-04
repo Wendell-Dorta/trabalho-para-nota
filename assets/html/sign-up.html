@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="../img/logo-dc.svg" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="container">
+
+        <nav id="nav" class="box">
+
+            <img src="../img/logo-dc.svg" alt="logo da empresa DC Comics" id="dc">
+
+            <ul id="list" >
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="contato.html">Contatos</a></li>
+                <li><a href="sign-up.html">Sign In</a></li>
+            </ul>
+
+        </nav>
+        
+
+
+        <main id="main" class="box">
+
+            <form id="sign-in-form" action="../../index.html" method="post">
+                <label for="username">Nick: </label>
+                <br>
+                <input type="text" placeholder="Digite seu nome (Somente letras de A-Z) *" name="username" id="user" maxlength="25"
+                pattern="^[a-zA-Z\u00C0-\u00FF ]+$"
+                onkeyup="validaNome(event)" required>
+                <br>
+                <label for="password">Senha: </label>
+                <input required type="password" name="senha" id="senha" placeholder="Senha">
+                <br>
+                <label for="password">Confirme sua Senha:</label>
+                <input required type="password" name="senhaC" id="senhaC" placeholder="Confirmar Senha">
+                <br>
+                <button type="submit" onclick="return validarSenha()">Sign In</button>
+            </form>
+          
+        </main>
+
+        <footer id="rodape" class="box">
+            <img src="../img/logo-dc.svg" alt="logo da empresa DC Comics" id="dc-rodape">
+
+            <h1>© & ™ DC. ALL RIGHTS RESERVED</h1>
+        </footer>
+
+    </div>
+
+    <!-- js -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
