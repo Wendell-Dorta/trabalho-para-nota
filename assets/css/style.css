@@ -65,6 +65,21 @@ nav ul li {
   margin-right: 25px;
 }
 
+#mar {
+  margin: 2em;
+  background-color: purple;
+}
+
+#text {
+  font-size: 2.5vh;
+  color: white;
+}
+
+#title {
+  font-size: 5vh;
+  color: white;
+}
+
 #dc {
   float: left;
   margin-right: 10px;
@@ -73,6 +88,10 @@ nav ul li {
 .banner-img {
   width: 100%;
   height: auto;
+}
+
+.img-super {
+  margin-bottom: 1em;
 }
 
 #sign-in-form {
@@ -124,6 +143,10 @@ nav ul li {
   background-color: blue;
 }
 
+.box {
+  margin-top: 2em;
+}
+
 /* fim nav */
 
 /* inicio main  */
@@ -165,7 +188,6 @@ nav ul li {
 /* inicio footer */
 #rodape {
   width: 100%;
-  margin-top: 17.5em;
 
   display: flex;
   flex-direction: column;

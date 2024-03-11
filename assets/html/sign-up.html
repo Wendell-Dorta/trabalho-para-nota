@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Sign In</title>
 
     <!-- Icon -->
     <link rel="shortcut icon" href="../img/logo-dc.svg" type="image/x-icon">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -88,14 +88,20 @@
                     <form id="sign-in-form" action="../../index.html" method="post">
                         <label for="username">Nick: </label>
                         <br>
-                        <input type="text" placeholder="Digite seu nick ou email *" name="username" id="user"
-                            maxlength="15" pattern="^[a-zA-Z\u00C0-\u00FF ]+$" onkeyup="validaNome(event)" required>
+                        <input type="text" placeholder="Digite seu nome (Somente letras de A-Z) *" name="username"
+                            id="user" maxlength="15" pattern="^[a-zA-Z\u00C0-\u00FF ]+$" onkeyup="validaNome(event)"
+                            required>
                         <br>
+                        <label for="email">Email:</label>
+                        <input required type="email" name="email" id="email" placeholder="Digite seu Email*" required>
                         <label for="password">Senha: </label>
                         <input required type="password" name="senha" id="senha" minlength="8"
                             placeholder="Senha(Mínimo 8 Digitos)*">
                         <br>
-                        <button type="submit" href="../../index.html">Login</button>
+                        <label for="password">Confirme sua Senha:</label>
+                        <input required type="password" name="senhaC" id="senhaC" placeholder="Confirmar Senha*">
+                        <br>
+                        <button type="submit" onclick="return validarSenha()">Sign In</button>
                     </form>
 
                 </main>
